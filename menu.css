@@ -1,0 +1,164 @@
+body{
+	background-image: url(makanan/bg1.jpeg);
+	
+}
+#banner_img{
+  background-image:url('bggambar.jpg');
+  background-size: cover;
+}
+#banner {
+  height: 85vh;
+  background-color:rgba(255,255,255,0.6);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.go{
+  position:absolute;
+  padding:100px;
+}
+.go h2 {
+  color:black;
+  background: transparent;
+  display: block;
+  text-align: center;
+  font-size: 50px;
+}
+.go p{
+  display:inline-block;
+  position:relative;
+  border:solid 30px coral;
+  border-radius: 20%;
+  background:coral;
+  box-shadow:0 0 20px yellow, 0 0 20px white;
+  transition:all 1s ease;
+  -o-transition:all 1s ease;
+  -moz-transition:all 1s ease;
+  -webkit-transition:all 1s ease;
+  top:40px;
+  padding: 25px;
+}
+.go p:hover{
+  top:0px;
+  opacity:0.6;
+}
+.logo_gambar{
+  width: 60px;
+  height: 60px;
+}
+@media all and (max-width: 750px) {
+  .go h2{
+    font-size: 35px;
+  }
+  .go p{
+    display: block;
+    text-align: center;
+    top:20px;
+    padding: 0px;
+  }
+  .go h2{
+    font-size:30px;
+ }
+}
+.container{
+	justify-content: center;
+  	align-items: center;
+  	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+	grid-gap: 12px;
+	padding:25px;
+}
+#ul{
+	display: inline-block;	
+}
+.li{
+	text-align:center;
+	display:block;
+	position:relative;
+	border:solid 10px;
+	background-color: rgba(150,75,0,0.8);
+}
+p{
+	margin:-15px 0 0 0;
+	font-family:Comic Sans MS;
+	font-size:30px;
+	background-color: coral;
+}
+h1{
+	font-family: Forte;
+	text-align: center;
+	font-size: 60px;
+}
+img{
+	width: 200px;
+	height: 200px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+.pesanan{
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#order_p1,#order_p2,#order_p3,#order_p4,#order_p5,#order_p6,#order_p7,#order_p8,#order_p9,#order_p10,
+#order_s1,#order_s2,#order_s3,#order_s4,#order_s5,#order_s6,#order_s7,#order_s8,#order_s9,#order_s10,
+#order_m1,#order_m2,#order_m3,#order_m4,#order_m5,#order_m6,#order_m7,#order_m8,#order_m9,#order_m10{
+	padding: 5px 20px ;
+	background-color: lightblue;
+	font-family:Comic Sans MS;
+	font-size:15px;
+	margin-bottom: 10px;
+
+}
+#pilih{
+	display: block;
+	padding: 10px 48px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+#cancel{
+	padding: 10px 40px;
+}
+#cek {
+  background-color:rgba(255,255,255,0.6);
+  margin: auto;
+  width: 50%;
+
+}
+#cek p {
+	text-align: center;
+}
+#bayar {
+	margin: auto;
+}
+#pilih_tunai, #pilih_tf{
+	display: block;
+	margin: auto;
+	margin-top: 50px;
+	padding: 25px 30px;
+	border-radius: 20%;
+	background-color: lightblue;
+}
+.jarak{
+	margin: auto;
+	font-size: 24px;
+	background-color: yellow;
+	align-items: center;
+}
+.jarak p,.jarak button,.jarak input{
+	margin: 20px;
+	text-align: center;
+}
+table,td{
+	margin: auto; 
+	padding: 10px;
+	font-size: 20px;
+}
+h3{
+  font-family: forte;
+  font-size: 50px;
+  text-align: center;
+  background-color: white;
+  border-radius: 30%;
+}

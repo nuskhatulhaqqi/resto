@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="menu.css">
+	<script src="menu.js"></script>
+</head>
+<body>
+	<div id="banner">
+      <div class="go">
+        <h2>kategori makanan</h2>
+        <p id="makan_pagi" onclick="pagi()">Sarapan</p>
+        <p id="makan_siang" onclick="siang()">Makan Siang</p>
+        <p id="makan_malam" onclick="malam()">Makan Malam</p>
+      </div>
+    </div>
+
+	<div  id="sarapan" style="display: none">
+	<h3>Menu Sarapan</h3>
+	<div class="container">
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/pagi/bubur_ayam.jpg"/>
+	    	<p>Bubur Ayam <br>Rp.15000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_p1">
+				<input type="reset" value="cancel" id="cancel" onclick="ex1()">
+			</form>
+			<button id="pilih" onclick="menu1_p()"> pilih </button>
+		</div>
+	</div>
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/pagi/bubur_ayam_original.jpeg"/>
+	    	<p>Bubur Ayam Original <br>Rp.12000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_p2">
+				<input type="reset" value="cancel" id="cancel" onclick="ex2()">
+			</form>
+			<button id="pilih" onclick="menu2_p()"> pilih </button>
+		</div>
+	</div>
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/pagi/bubur_kacang_ijo.jpg"/>
+	    	<p>Bubur Kacang Ijo <br>Rp.10000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_p3">
+				<input type="reset" value="cancel" id="cancel" onclick="ex3()">
+			</form>
+			<button id="pilih" onclick="menu3_p()"> pilih </button>
+		</div>
+	</div>
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/pagi/bubur_sumsum.jpg"/>
+	    	<p>Bubur Sumsum <br>Rp.15000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_p4">
+				<input type="reset" value="cancel" id="cancel" onclick="ex4()">
+			</form>
+			<button id="pilih" onclick="menu4_p()"> pilih </button>
+		</div>
+	</div>
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/pagi/ketupat_sayur.jpg"/>
+	    	<p>Ketupat Sayur <br>Rp.12000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_p5">
+				<input type="reset" value="cancel" id="cancel" onclick="ex5()">
+			</form>
+			<button id="pilih" onclick="menu5_p()"> pilih </button>
+		</div>
+	</div>
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/pagi/lontong_balap.jpg"/>
+	    	<p>lontong Balap <br>Rp.14000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_p6">
+				<input type="reset" value="cancel" id="cancel" onclick="ex6()">
+			</form>
+			<button id="pilih" onclick="menu6_p()"> pilih </button>
+		</div>
+	</div>
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/pagi/nasi_krawu.jpg"/>
+	    	<p>Nasi Krawu <br>Rp.25000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_p7">
+				<input type="reset" value="cancel" id="cancel" onclick="ex7()">
+			</form>
+			<button id="pilih" onclick="menu7_p()"> pilih </button>
+		</div>
+	</div>
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/pagi/nasi_kuning.jpg"/>
+	    	<p>Nasi Kuning <br>Rp.15000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_p8">
+				<input type="reset" value="cancel" id="cancel" onclick="ex8()">
+			</form>
+			<button id="pilih" onclick="menu8_p()"> pilih </button>
+		</div>
+	</div>
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/pagi/nasi_pecel.jpg"/>
+	    	<p>Nasi Pecel<br>Rp.10000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_p9">
+				<input type="reset" value="cancel" id="cancel" onclick="ex9()">
+			</form>
+			<button id="pilih" onclick="menu9_p()"> pilih </button>
+		</div>
+	</div>
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/pagi/nasi_uduk.jpg"/>
+	    	<p>Nasi Uduk <br>Rp.20000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_p10">
+				<input type="reset" value="cancel" id="cancel" onclick="ex10()">
+			</form>
+			<button id="pilih" onclick="menu10_p()"> pilih </button>
+		</div>
+	</div>
+	</div>
+	</div>
+
+	<div  id="siang" style="display: none">
+	<h3>Menu Makan Siang</h3>
+	<div class="container">
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/siang/asem_asem_daging.jpg"/>
+	    	<p>Asem-Asem Daging <br>Rp.47000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_s1">
+				<input type="reset" value="cancel" id="cancel" onclick="ex1()">
+			</form>
+			<button id="pilih" onclick="menu1_s()"> pilih </button>
+		</div>
+	</div>
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/siang/ayam_sambel_matah.jpg"/>
+	    	<p>Ayam Sambal Matah <br>Rp.25000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_s2">
+				<input type="reset" value="cancel" id="cancel" onclick="ex2()">
+			</form>
+			<button id="pilih" onclick="menu2_s()"> pilih </button>
+		</div>
+	</div>
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/siang/daging_bumbu_cincang.jpg"/>
+	    	<p>Daging Bumbu Cincang <br>Rp.55000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_s3">
+				<input type="reset" value="cancel" id="cancel" onclick="ex3()">
+			</form>
+			<button id="pilih" onclick="menu3_s()"> pilih </button>
+		</div>
+	</div>
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/siang/gurame_cobek.jpg"/>
+	    	<p>Gurame Cobek<br>Rp.25000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_s4">
+				<input type="reset" value="cancel" id="cancel" onclick="ex4()">
+			</form>
+			<button id="pilih" onclick="menu4_s()"> pilih </button>
+		</div>
+	</div>
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/siang/oseng_pete_cumi.jpg"/>
+	    	<p>Oseng-Oseng Pete Cumi<br>Rp.45000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_s5">
+				<input type="reset" value="cancel" id="cancel" onclick="ex5()">
+			</form>
+			<button id="pilih" onclick="menu5_s()"> pilih </button>
+		</div>
+	</div>
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/siang/sate_ayam.jpg"/>
+	    	<p>Sate Ayam <br>Rp.30000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_s6">
+				<input type="reset" value="cancel" id="cancel" onclick="ex6()">
+			</form>
+			<button id="pilih" onclick="menu6_s()"> pilih </button>
+		</div>
+	</div>
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/siang/sayur_asem.jpg"/>
+	    	<p>Sayur Asem <br>Rp.12000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_s7">
+				<input type="reset" value="cancel" id="cancel" onclick="ex7()">
+			</form>
+			<button id="pilih" onclick="menu7_s()"> pilih </button>
+		</div>
+	</div>
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/siang/sayur_oyong_bihun.jpg"/>
+	    	<p>Sayur Oyong Bihun <br>Rp.15000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_s8">
+				<input type="reset" value="cancel" id="cancel" onclick="ex8()">
+			</form>
+			<button id="pilih" onclick="menu8_s()"> pilih </button>
+		</div>
+	</div>
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/siang/sosis_asam_manis.jpg"/>
+	    	<p>Sosis Asam Manis<br>Rp.20000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_s9">
+				<input type="reset" value="cancel" id="cancel" onclick="ex9()">
+			</form>
+			<button id="pilih" onclick="menu9_s()"> pilih </button>
+		</div>
+	</div>
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/siang/telor_ceplok_balado.jpg"/>
+	    	<p>Telr Ceplok Balada <br>Rp.25000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_s10">
+				<input type="reset" value="cancel" id="cancel" onclick="ex10()">
+			</form>
+			<button id="pilih" onclick="menu10_s()"> pilih </button>
+		</div>
+	</div>
+	</div>
+	</div>
+
+	<div  id="malam" style="display: none">
+	<h3>Menu Makan Malam</h3>
+	<div class="container">
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/malam/ayam_asam_manis.jpg"/>
+	    	<p>Ayam Asam Manis <br>Rp.50000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_m1">
+				<input type="reset" value="cancel" id="cancel" onclick="ex1()">
+			</form>
+			<button id="pilih" onclick="menu1_m()"> pilih </button>
+		</div>
+	</div>
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/malam/capcay_goreng.jpg"/>
+	    	<p>Capcay Goreng <br>Rp.20000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_m2">
+				<input type="reset" value="cancel" id="cancel" onclick="ex2()">
+			</form>
+			<button id="pilih" onclick="menu2_m()"> pilih </button>
+		</div>
+	</div>
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/malam/ikan_goreng_sambal_matah.jpg"/>
+	    	<p>Ikan Goreng Sambal Matah <br>Rp.30000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_m3">
+				<input type="reset" value="cancel" id="cancel" onclick="ex3()">
+			</form>
+			<button id="pilih" onclick="menu3_m()"> pilih </button>
+		</div>
+	</div>
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/malam/mie_godog_jawa.jpg"/>
+	    	<p>Mie Godog Jawa<br>Rp.29000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_m4">
+				<input type="reset" value="cancel" id="cancel" onclick="ex4()">
+			</form>
+			<button id="pilih" onclick="menu4_m()"> pilih </button>
+		</div>
+	</div>
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/malam/nasi_goreng.jpg"/>
+	    	<p>Nasi Goreng<br>Rp.30000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_m5">
+				<input type="reset" value="cancel" id="cancel" onclick="ex5()">
+			</form>
+			<button id="pilih" onclick="menu5_m()"> pilih </button>
+		</div>
+	</div>
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/malam/nasi_goreng_gila.jpg"/>
+	    	<p>Nasi Goreng Gila <br>Rp.25000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_m6">
+				<input type="reset" value="cancel" id="cancel" onclick="ex6()">
+			</form>
+			<button id="pilih" onclick="menu6_m()"> pilih </button>
+		</div>
+	</div>
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/malam/rawon_iga_sapi.jpg"/>
+	    	<p>Rawon Iga Sapi <br>Rp.55000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_m7">
+				<input type="reset" value="cancel" id="cancel" onclick="ex7()">
+			</form>
+			<button id="pilih" onclick="menu7_m()"> pilih </button>
+		</div>
+	</div>
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/malam/sop_merah.jpg"/>
+	    	<p>Sop Merah<br>Rp.20000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_m8">
+				<input type="reset" value="cancel" id="cancel" onclick="ex8()">
+			</form>
+			<button id="pilih" onclick="menu8_m()"> pilih </button>
+		</div>
+	</div>
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/malam/sop_tomyum.jpg"/>
+	    	<p>Sop Tomyum<br>Rp.25000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_m9">
+				<input type="reset" value="cancel" id="cancel" onclick="ex9()">
+			</form>
+			<button id="pilih" onclick="menu9_m()"> pilih </button>
+		</div>
+	</div>
+	<div id="ul">
+		<div class="li">
+			<img src="makanan/malam/tongseng_ayam_jamur.jpg"/>
+	    	<p>Tongseng Ayam Jamur <br>Rp.55000 </p>
+	    	<form class="pesanan">
+	    		jumlah pesanan:
+				<input type="number" name="jml" id="order_m10">
+				<input type="reset" value="cancel" id="cancel" onclick="ex10()">
+			</form>
+			<button id="pilih" onclick="menu10_m()"> pilih </button>
+		</div>
+	</div>
+	</div>
+	</div>
+
+	<div id="cek" style="display: none;">
+		<p>pesanan anda:</p>
+		<table>
+			<tr id="menu1_p"></tr>
+			<tr id="menu2_p"></tr>
+			<tr id="menu3_p"></tr>
+			<tr id="menu4_p"></tr>
+			<tr id="menu5_p"></tr>
+			<tr id="menu6_p"></tr>
+			<tr id="menu7_p"></tr>
+			<tr id="menu8_p"></tr>
+			<tr id="menu9_p"></tr>
+			<tr id="menu10_p"></tr>
+		</table> 
+		<button id="pilih" onclick="bayar()"> bayar </button>
+		<p> Total: Rp. <span id="total1"></span></p>
+		<div id="pilihan" class="jarak" style="display: none;">
+			<p>pembayaran <br><span>pilih kategori:</span></p>
+			<button id="pilih" onclick="tunai()"> tunai </button>
+			<button id="pilih" onclick="tf()"> transfer </button>
+		</div>
+		<div id="tunai" class="jarak" style="display: none;">
+			<center>
+			<p>pembayaran <br><span>pembayaran tunai:</span></p>
+			<label for="nama">nama:</label><br>
+			<input type="text" name="nama" id="nama"><br>
+			<label for="uang">nominal pembayaran:</label><br>
+			<input type="number" name="uang" id="uang1">
+			<button id="pilih" onclick="akhir()"> bayar </button>
+			<form>
+			<button id="back" type="submit" style="display: none;"> back </button>
+			</form>
+			</center>
+			<p id="pemberitahuan"></p>
+		</div>
+		<div id="tf" class="jarak" style="display: none;">
+			<center>
+			<p>pembayaran <br><span>pembayaran transfer:</span></p>
+			<label for="nama">nama:</label><br>
+			<input type="text" name="nama" id="nama"><br>
+			<label for="norec">nomer rekening:</label><br>
+			<input type="number" name="norec" id="norec"><br>
+			<label for="nama">password:</label><br>
+			<input type="password" name="ps" id="ps"><br>
+			<label for="uang">nominal pembayaran:</label><br>
+			<input type="number" name="uang" id="uang2"><br>
+			<button id="pilih" onclick="akhir1()"> bayar </button><br>
+			<form>
+			<button id="back1" type="submit" style="display: none;"> back </button>
+			</form>
+			</center>
+			<p id="pemberitahuan1"></p>
+		</div>
+		
+	</div>
+</body>
+</html>
