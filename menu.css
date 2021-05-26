@@ -1,18 +1,21 @@
 body{
 	background-image: url(makanan/bg1.jpeg);
-	
+  background-size: cover;	
 }
 #banner_img{
-  background-image:url('bggambar.jpg');
   background-size: cover;
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
 }
 #banner {
-  height: 85vh;
   background-color:rgba(255,255,255,0.6);
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 100px;
+  height: 100vh;
 }
 .go{
   position:absolute;
@@ -24,11 +27,16 @@ body{
   display: block;
   text-align: center;
   font-size: 50px;
+  padding: 100px;
+  margin: auto;
 }
-.go p{
+.kotak{
+  width: 250px;
+  height: 100px;
   display:inline-block;
-  position:relative;
-  border:solid 30px coral;
+}
+.go p{  
+  border:solid 1px coral;
   border-radius: 20%;
   background:coral;
   box-shadow:0 0 20px yellow, 0 0 20px white;
@@ -47,25 +55,11 @@ body{
   width: 60px;
   height: 60px;
 }
-@media all and (max-width: 750px) {
-  .go h2{
-    font-size: 35px;
-  }
-  .go p{
-    display: block;
-    text-align: center;
-    top:20px;
-    padding: 0px;
-  }
-  .go h2{
-    font-size:30px;
- }
-}
 .container{
 	justify-content: center;
-  	align-items: center;
-  	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+	align-items: center;
+  display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
 	grid-gap: 12px;
 	padding:25px;
 }
@@ -111,7 +105,7 @@ img{
 	margin-bottom: 10px;
 
 }
-#pilih{
+#pilih, #back,#back1{
 	display: block;
 	padding: 10px 48px;
 	margin: auto;
@@ -123,7 +117,7 @@ img{
 #cek {
   background-color:rgba(255,255,255,0.6);
   margin: auto;
-  width: 50%;
+  width: 90%;
 
 }
 #cek p {
@@ -161,4 +155,29 @@ h3{
   text-align: center;
   background-color: white;
   border-radius: 30%;
+}
+b{
+  border-radius: 50%;
+  font-size: 40px;
+  background-color: lightyellow;
+  padding: 10px;
+  float: left;
+  transform: rotate(-10deg);
+}
+@media all and (max-width: 1000px) {
+  .go h2{
+    padding: 100px;
+  }
+  .kotak{
+    display: block;
+    position: relative;
+    text-align: center;
+    top:20px;
+    padding: 15px;
+    margin: auto;
+  }
+  .go{
+    justify-content: center;
+    align-items: center;
+  }
 }
