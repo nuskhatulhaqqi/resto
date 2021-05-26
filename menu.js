@@ -44,9 +44,11 @@ function menu3_p() {
 }
 function menu4_p() {
 	jml = document.getElementById('order_p4').value;
-	jml_fix = jml*15000
+	diskon =15000*0.20
+	byr = 15000-diskon
+	jml_fix = (jml*byr)
 	x[3]= jml_fix
-	document.getElementById('menu4_p').innerHTML= "<td>Bubur Sumsum </td><td> Rp. 15000 </td><td> jumlah " +jml+"</td>";	
+	document.getElementById('menu4_p').innerHTML= "<td>Bubur Sumsum </td><td><s> Rp. 15000 </s></td><td>Rp."+byr+"</td><td> jumlah " +jml+"</td>";	
 }
 function menu5_p() {
 	jml = document.getElementById('order_p5').value;
@@ -62,9 +64,11 @@ function menu6_p() {
 }
 function menu7_p() {
 	jml = document.getElementById('order_p7').value;
-	jml_fix = jml*25000
+	diskon =25000*0.10
+	byr = 25000-diskon
+	jml_fix = (jml*byr)
 	x[6]= jml_fix
-	document.getElementById('menu7_p').innerHTML= "<td>Nasi Krawu</td><td>Rp. 25000 </td><td>jumlah"+jml+"</td>";	
+	document.getElementById('menu7_p').innerHTML= "<td>Nasi Krawu</td><td><s>Rp. 25000 </s></td><td>Rp."+byr+"</td><td>jumlah"+jml+"</td>";	
 }
 function menu8_p() {
 	jml = document.getElementById('order_p8').value;
@@ -80,16 +84,20 @@ function menu9_p() {
 }
 function menu10_p() {
 	jml = document.getElementById('order_p10').value;
-	jml_fix = jml*20000
+	diskon =20000*0.1
+	byr = 20000-diskon
+	jml_fix = (jml*byr)
 	x[9]= jml_fix
-	document.getElementById('menu10_p').innerHTML= "<td>Nasi Uduk </td><td> Rp. 20000 </td><td> jumlah " +jml+"</td>";	
+	document.getElementById('menu10_p').innerHTML= "<td>Nasi Uduk </td><td><s> Rp. 20000 </s></td><td>Rp."+byr+"</td><td> jumlah " +jml+"</td>";	
 }
 
 function menu1_s() {
 	jml = document.getElementById('order_s1').value;
-	jml_fix = jml*47000
+	diskon =47000*0.2
+	byr = 47000-diskon
+	jml_fix = (jml*byr)
 	x[0]= jml_fix
-	document.getElementById('menu1_p').innerHTML= "<td>Asem - asem Daging</td><td> Rp. 47000 </td><td> jumlah " +jml+"</td>";	
+	document.getElementById('menu1_p').innerHTML= "<td>Asem - asem Daging</td><td><s> Rp. 47000 </s></td><td>Rp."+byr+"</td><td> jumlah " +jml+"</td>";	
 }
 function menu2_s() {
 	jml = document.getElementById('order_s2').value;
@@ -111,9 +119,11 @@ function menu4_s() {
 }
 function menu5_s() {
 	jml = document.getElementById('order_s5').value;
-	jml_fix = jml*45000
+	diskon =45000*0.25
+	byr = 45000-diskon
+	jml_fix = (jml*byr)
 	x[4]= jml_fix
-	document.getElementById('menu5_p').innerHTML= "<td>Oseng-Oseng Pete Cumi</td><td> Rp. 45000 </td><td> jumlah " +jml+"</td>";	
+	document.getElementById('menu5_p').innerHTML= "<td>Oseng-Oseng Pete Cumi</td><td><s> Rp. 45000 </s></td><td>Rp."+byr+"</td><td> jumlah " +jml+"</td>";	
 }
 function menu6_s() {
 	jml = document.getElementById('order_s6').value;
@@ -135,28 +145,36 @@ function menu8_s() {
 }
 function menu9_s() {
 	jml = document.getElementById('order_s9').value;
-	jml_fix = jml*20000
+	diskon =20000*0.05
+	byr = 20000-diskon
+	jml_fix = (jml*byr)
 	x[8]= jml_fix
-	document.getElementById('menu9_p').innerHTML= "<td>Sosis Asam Manis </td><td> Rp. 20000 </td><td> jumlah " +jml+"</td>";	
+	document.getElementById('menu9_p').innerHTML= "<td>Sosis Asam Manis </td><td><s> Rp. 20000 </s></td><td>Rp."+byr+"</td><td>jumlah " +jml+"</td>";	
 }
 function menu10_s() {
 	jml = document.getElementById('order_s10').value;
-	jml_fix = jml*25000
+	diskon =25000*0.1
+	byr = 25000-diskon
+	jml_fix = (jml*byr)
 	x[9]= jml_fix
-	document.getElementById('menu10_p').innerHTML= "<td>Telor Ceplok Balada </td><td> Rp. 25000 </td><td> jumlah " +jml+"</td>";	
+	document.getElementById('menu10_p').innerHTML= "<td>Telor Ceplok Balada </td><td><s> Rp. 25000 </s></td><td>Rp."+byr+"</td><td> jumlah " +jml+"</td>";	
 }
 
 function menu1_m() {
 	jml = document.getElementById('order_m1').value;
-	jml_fix = jml*50000
+	diskon =50000*0.25
+	byr = 50000-diskon
+	jml_fix = (jml*byr)
 	x[0]= jml_fix
-	document.getElementById('menu1_p').innerHTML= "<td>Ayam Asam Manis</td><td> Rp. 50000 </td><td> jumlah " +jml+"</td>";	
+	document.getElementById('menu1_p').innerHTML= "<td>Ayam Asam Manis</td><td><s> Rp. 50000 </s></td><td>Rp."+byr+"</td><td> jumlah " +jml+"</td>";	
 }
 function menu2_m() {
 	jml = document.getElementById('order_m2').value;
-	jml_fix = jml*20000
+	diskon =20000*0.25
+	byr = 20000-diskon
+	jml_fix = (jml*byr)
 	x[1]= jml_fix
-	document.getElementById('menu2_p').innerHTML= "<td>Capcay Goreng</td><td>Rp. 20000 </td><td>jumlah"+jml+"</td>";	
+	document.getElementById('menu2_p').innerHTML= "<td>Capcay Goreng</td><td><s> Rp. 20000 </s></td><td>Rp."+byr+"</td><td> jumlah"+jml+"</td>";	
 }
 function menu3_m() {
 	jml = document.getElementById('order_m3').value;
@@ -184,9 +202,11 @@ function menu6_m() {
 }
 function menu7_m() {
 	jml = document.getElementById('order_m7').value;
-	jml_fix = jml*55000
+	diskon =55000*0.3
+	byr = 55000-diskon
+	jml_fix = (jml*byr)
 	x[6]= jml_fix
-	document.getElementById('menu7_p').innerHTML= "<td>Rawon Iga Sapi</td><td>Rp. 55000 </td><td>jumlah"+jml+"</td>";	
+	document.getElementById('menu7_p').innerHTML= "<td>Rawon Iga Sapi</td><td><s>Rp. 55000 </s></td><td>Rp."+byr+"</td><td>jumlah"+jml+"</td>";	
 }
 function menu8_m() {
 	jml = document.getElementById('order_m8').value;
@@ -202,9 +222,11 @@ function menu9_m() {
 }
 function menu10_m() {
 	jml = document.getElementById('order_m10').value;
-	jml_fix = jml*55000
+	diskon =55000*0.3
+	byr = 55000-diskon
+	jml_fix = (jml*byr)
 	x[9]= jml_fix
-	document.getElementById('menu10_p').innerHTML= "<td>Tongseng Ayam Jamur </td><td> Rp. 55000 </td><td> jumlah " +jml+"</td>";	
+	document.getElementById('menu10_p').innerHTML= "<td>Tongseng Ayam Jamur </td><td><s>Rp. 55000 </s></td><td>Rp."+byr+"</td><td> jumlah " +jml+"</td>";	
 }
 
 function ex1(){
@@ -253,18 +275,24 @@ function bayar(){
 	document.getElementById("tunai").style.display = 'none';
 	document.getElementById("tf").style.display = 'none';
 	document.getElementById("sarapan").style.display = 'none';
+	document.getElementById("siang").style.display = 'none';
+	document.getElementById("malam").style.display = 'none';
 	document.getElementById("pilihan").style.display = 'block';
 }
 function tunai(){
 	document.getElementById("tunai").style.display = 'block';
 	document.getElementById("tf").style.display = 'none';
 	document.getElementById("sarapan").style.display = 'none';
+	document.getElementById("siang").style.display = 'none';
+	document.getElementById("malam").style.display = 'none';
 	document.getElementById("pilihan").style.display = 'none';
 }
 function tf(){
 	document.getElementById("tunai").style.display = 'none';
 	document.getElementById("tf").style.display = 'block';
 	document.getElementById("sarapan").style.display = 'none';
+	document.getElementById("siang").style.display = 'none';
+	document.getElementById("malam").style.display = 'none';
 	document.getElementById("pilihan").style.display = 'none';
 }
 function akhir(){
