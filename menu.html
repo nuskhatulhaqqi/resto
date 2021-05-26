@@ -428,20 +428,19 @@
 		</div>
 		<div id="tunai" class="jarak" style="display: none;">
 			<center>
+			<form name="fromLogin" onsubmit="return akhir()">
 			<p>pembayaran <br><span>pembayaran tunai:</span></p>
 			<label for="nama">nama:</label><br>
 			<input type="text" name="nama" id="nama"><br>
 			<label for="uang">nominal pembayaran:</label><br>
 			<input type="number" name="uang" id="uang1">
-			<button id="pilih" onclick="akhir()"> bayar </button>
-			<form>
-			<button id="back" type="submit" style="display: none;"> back </button>
+			<button id="pilih" type="submit"> bayar </button>
 			</form>
 			</center>
-			<p id="pemberitahuan"></p>
 		</div>
 		<div id="tf" class="jarak" style="display: none;">
 			<center>
+			<form name="fromLogin" onsubmit="return akhir1()">
 			<p>pembayaran <br><span>pembayaran transfer:</span></p>
 			<label for="nama">nama:</label><br>
 			<input type="text" name="nama" id="nama"><br>
@@ -451,12 +450,9 @@
 			<input type="password" name="ps" id="ps"><br>
 			<label for="uang">nominal pembayaran:</label><br>
 			<input type="number" name="uang" id="uang2"><br>
-			<button id="pilih" onclick="akhir1()"> bayar </button><br>
-			<form>
-			<button id="back1" type="submit" style="display: none;"> back </button>
+			<button id="pilih" type="submit"> bayar </button>	
 			</form>
 			</center>
-			<p id="pemberitahuan1"></p>
 		</div>
 	</div>
 </body>

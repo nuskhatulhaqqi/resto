@@ -297,40 +297,51 @@ function tf(){
 }
 function akhir(){
 	var uang = document.getElementById("uang1").value;
-	if (uang == hasil1){		
-		document.getElementById("pemberitahuan").innerHTML ="<br> Terimakasih sudah memesan :)";
-		document.getElementById("back").style.display = 'block';
-		}
-	if (uang > hasil1){
-		var kembalian = uang - hasil1
-		document.getElementById("pemberitahuan").innerHTML ="<br>total: Rp."+uang +"- Rp"+ hasil + " kembalian anda Rp. "+kembalian+ "<br> Terimakasih sudah memesan :)";
-		document.getElementById("back").style.display = 'block';
-	}
-	if (uang < hasil1){
-		var kurang = hasil1 - uang
-		document.getElementById("pemberitahuan").innerHTML ="<br> uang anda kurang " +kurang + "<br> Silahkan di cek kembali";
-	}
+	if (uang == hasil1) {
+        alert('Terimakasih sudah memesan :)');
+        document.forms['fromLogin']['uang1'].focus();
+        return true;
+        }
+    if (uang > hasil1){
+    	var kembalian = uang - hasil1
+    	alert("total: Rp."+uang +"- Rp"+ hasil + " kembalian anda Rp. " +kembalian+ "<br> Terimakasih sudah memesan :)");
+    	document.forms['fromLogin']['uang1'].focus();
+        return true;
+    	}
+    if (uang < hasil1){
+    	var kurang = hasil1 - uang
+    	var yakin = confirm("Maaf uang yang anda masukkan kurang Rp. "+kurang+" Apakah anda ingin mengecek ulang?");
+    	if (yakin){
+    		return false;
+    	}else{
+    		alert('Maaf pesanan anda tidak dapat di proses');
+    		return true;
+    	}
+    	document.forms['fromLogin']['uang1'].focus();
+    	}
 }
 function akhir1(){
 	var uang = document.getElementById("uang2").value;
-	if (uang == hasil1){		
-		document.getElementById("pemberitahuan1").innerHTML ="<br> Terimakasih sudah memesan :)";
-		document.getElementById("back1").style.display = 'block';
-		}
-	if (uang > hasil1){
-		var kembalian = uang - hasil1
-		document.getElementById("pemberitahuan1").innerHTML ="<br>total: Rp."+uang +"- Rp"+ hasil + " kembalian anda Rp. "+kembalian+ "<br> Terimakasih sudah memesan :)";
-		document.getElementById("back1").style.display = 'block';
-	}
-	if (uang < hasil1){
-		var kurang = hasil1 - uang
-		document.getElementById("pemberitahuan1").innerHTML ="<br> uang anda kurang " +kurang + "<br> Silahkan di cek kembali";
-	}
-}
-function kembali(){
-	document.getElementById("tunai").style.display = 'none';
-	document.getElementById("tf").style.display = 'none';
-	document.getElementById("cek").style.display = 'none';
-	document.getElementById("banner").style.display = 'block';
-
+	if (uang == hasil1) {
+        alert('Terimakasih sudah memesan :)');
+        document.forms['fromLogin']['uang2'].focus();
+        return true;
+        }
+    if (uang > hasil1){
+    	var kembalian = uang - hasil1
+    	alert("total: Rp."+uang +"- Rp"+ hasil + " kembalian anda Rp. " +kembalian+ "<br> Terimakasih sudah memesan :)");
+    	document.forms['fromLogin']['uang2'].focus();
+        return true;
+    	}
+    if (uang < hasil1){
+    	var kurang = hasil1 - uang
+    	var yakin = confirm("Maaf uang yang anda masukkan kurang Rp. "+kurang+" Apakah anda ingin mengecek ulang?");
+    	if (yakin){
+    		return false;
+    	}else{
+    		alert('Maaf pesanan anda tidak dapat di proses');
+    		return true;
+    	}
+    	document.forms['fromLogin']['uang2'].focus();
+    	}
 }
