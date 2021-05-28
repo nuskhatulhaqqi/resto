@@ -1,5 +1,8 @@
-body{
-	background-image: url(makanan/bg1.jpeg);
+body {
+  background-color: #CD9F6E;
+}
+.bg{
+	background-image: url(makanan/bg2.jpeg);
   background-size: cover;	
 }
 #banner_img{
@@ -137,7 +140,7 @@ img{
 .jarak{
 	margin: auto;
 	font-size: 24px;
-	background-color: yellow;
+	background-color: #E3C6B4;
 	align-items: center;
 }
 .jarak p,.jarak button,.jarak input{
