@@ -304,7 +304,7 @@ function akhir(){
         }
     if (uang > hasil1){
     	var kembalian = uang - hasil1
-    	alert("total: Rp."+uang +"- Rp"+ hasil + " kembalian anda Rp. " +kembalian+ "<br> Terimakasih sudah memesan :)");
+    	alert("total: Rp."+uang +"- Rp"+ hasil + " kembalian anda Rp. " +kembalian+ ". Terimakasih sudah memesan :)");
     	document.forms['fromLogin']['uang1'].focus();
         return true;
     	}
