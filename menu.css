@@ -18,7 +18,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0px;
-  height: 100vh;
+  height: 70vh;
 }
 .go{
   position:absolute;
@@ -182,5 +182,8 @@ b{
   .go{
     justify-content: center;
     align-items: center;
+  }
+ #banner{
+    height: 150vh;
   }
 }
